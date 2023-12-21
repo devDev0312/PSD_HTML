@@ -1,0 +1,349 @@
+
+@font-face {
+    font-family: "Ortrich";
+    src: url("../fonts/OstrichSans-Black.otf") 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.homepage {
+    min-height: 900px;
+    background-image: url('../img/page1_back.jpg');
+    background-size: cover;
+}
+
+.container{
+    width: 70%;
+    margin: 0px auto;
+}
+
+.home_nav_top_bar {  
+    display: flex;
+    text-align: center;
+    align-items: center;   
+    padding-top: 2rem;
+    justify-content: space-between;
+}
+
+.home_nav_middle_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-family: "Ortrich";
+}
+
+.home_nav_link {
+    color: white;
+    font-family: blackitalic;
+}
+
+.home_nav_link span{
+    margin-left: 1rem;
+}
+
+.mountain_name p{
+    margin-bottom: 0 !important;
+    line-height: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.home_nav_link a{
+    color: white;
+    font-weight: 800;
+    font-family: monospace;
+}
+
+.home_nav_middle_bar a{
+    color: rgb(51, 51, 51);
+    font-weight: 800;
+    font-family: monospace;
+}
+
+.middle_nav_bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #404E6C;
+}
+
+.middle_nav_bar ul{
+    list-style-type: none;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #404E6C;
+}
+
+.middle_nav_bar ul li {
+    float: left;
+  }
+  
+.middle_nav_bar ul li a {
+    padding: 5px 16px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #B0B4BE;
+    font-weight: 700;
+    font-family: 'Ortrich';
+}
+  
+.middle_nav_bar ul li a:hover:not(.active) {
+    background-color: #B0B4BE;
+    color: #414f6b !important;
+}
+
+.active {
+    background-color: #B0B4BE;
+    color: #414f6b !important;
+}
+
+.page1 {
+    min-height: 700px;
+    background-image: url('../img/page2_back.jpg');
+    background-size: cover;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page1_content{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.page1_bottom {
+    position: inherit;
+    min-height: 20vh;
+    text-align: center;
+    margin-top: 80vh;
+    background-color: rgb(96, 109,132,0.5);
+}
+
+.page1_bottom img {
+    max-width: 20vw;
+    max-height: 120px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.page2 {
+min-height: 750px;
+background-image: url('../img/page3_back.jpg');
+background-size: cover;
+}
+
+.page2_title {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.page2_title p{
+    width: 35%
+}
+
+.carousel_area{
+    background-color: #414f6ba8;
+    padding: 1rem;
+}
+
+.slider {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.page2_content{
+    min-height: 470px;
+    background: url('../img/page3_back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.schedule_container{
+    width: 30%;
+    margin-left: 30vw;
+    padding-top: 100px;
+}
+
+.schedule{
+    background-color: rgba(255, 255, 255, 0.616);
+    padding: 2rem;
+}
+
+.schedule h1{
+    font-size: 32px !important;
+    color: #414f6b;
+    font-weight: 700;
+    font-family: 'Ortrich';
+}
+
+.schedule p, .schedule h2{
+    margin: 0 !important;
+    font-size: 16px;
+    line-height: 24px;
+    color: #585858;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.schedule h2{
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.footer{
+    background-color: #404E6C;
+}
+
+.footer_container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_mountain_name p{
+    margin: 0px !important;
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #63769d;
+    font-weight: 800;
+}
+
+.footer_copyright{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #63769d;
+    font-weight: 900;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+    .schedule_container{
+        width: 60%;
+        margin: auto;
+        padding-top: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .page1_content{
+        padding: 0rem;
+    }
+    .carousel_area{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 372px) {
+    .home_nav_link {
+        text-align: right;
+    }
+
+    .home_nav_middle_bar{
+        display: block;
+    }
+
+    .page1 .container img{
+        width: 80%;
+    }
+
+    .page1_content{
+        padding: 0rem;
+    }
+
+    .page2_title{
+        display: block;
+    }
+
+    .page2_title img{
+        width: 45%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .page2_title p{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .middle_nav_bar ul{
+        padding: 1rem;
+    }
+
+    .middle_nav_bar ul li{
+        width: 100%;
+    }
+
+    .schedule_container{
+        width: 90%;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+    .schedule p, .schedule h2{
+        display: block;
+    }
+
+    .footer_container{
+        display: block;
+    }
+
+    .footer_copyright{
+        text-align: center;
+    }
+}
